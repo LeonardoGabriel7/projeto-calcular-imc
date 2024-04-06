@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    
-    <h1 class="Titulo1">Calculadora - IMC</h1>
 
-    <label for="peso">Peso em kg</label> 
-    <input type="text" name="peso" id="peso">        <span>kg</span>   
-    <br>
-    <label for="altura">Altura em metros</label>
-    <input type="text" name="altura" id="altura">    <span>m</span>
-    <br>
-    <input type="button" value="Calcular">
-
-
-
-
-
+    <div class="container">
+        <h1 class="titulo1">Calculadora - <br>IMC</h1>
+        <hr size="4" width="45%" align="left" noshade >
+        <label for="peso">Peso em kg:</label>
+        <br>
+        <input type="number" name="peso" id="peso"  > 
+        <br>
+        <label for="altura">Altura em metros:</label>
+        <br>
+        <input type="text" name="altura" id="altura"> 
+        <br>
+        <input class="botao" type="button" value="Calcular">
+        
+    </div>
 
 </body>
+
 </html>
