@@ -18,6 +18,39 @@ h1.titulo1 {
     
 }
 
+p{
+    margin-bottom: 0.7px;
+    font-size: 19px;
+}
+
+div.botao2{
+    display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+button.masculino{
+    margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+    
+}
+
+button.feminino{
+    margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
+    background-color: rgb(241, 4, 210);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
 hr {
     background-color: blue;
     margin-top: -15px;
@@ -48,7 +81,10 @@ input.botao {
     margin: 0, auto; 
     width: 300px;
     height: 40px;
+    cursor: pointer;
 }
+
+
 
 input.metricas{
     border: none;
@@ -66,5 +102,6 @@ span,i{
 }
 
 label{
+    
     font-size: 19px;
 }
