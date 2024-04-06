@@ -14,16 +14,14 @@
 
 <body>
 
-    
-
     <div class="container">
         <h1 class="titulo1">Calculadora - <br>IMC</h1>
         <hr size="8" width="43%" align="left" noshade>
 
         <p>Sexo:</p>
         <div class="botao2">
-            <button class="masculino">Masculino</button> 
-             <button class="feminino">Feminino</button>
+            <button id="masculinoid" onclick="alterarCor('masculinoid')" class="masculino">Masculino</button> 
+            <button id="femininoid" onclick="alterarCor('femininoid')" class="feminino">Feminino</button>
         </div>
 
         <label for="peso">Peso em kg:</label>
@@ -46,6 +44,7 @@
 
     </div>
 
+  
 </body>
 
 </html>

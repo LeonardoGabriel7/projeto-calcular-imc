@@ -19,30 +19,32 @@ h1.titulo1 {
 }
 
 p{
-    margin-bottom: 0.7px;
+    margin-bottom: 6px;
     font-size: 19px;
+    font-weight: 500px;
 }
 
 div.botao2{
-    display: flex;
+display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
 button.masculino{
-    margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
-  background-color: blue;
+  margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
+  background-color: rgb(84, 84, 163);
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   margin-bottom: 10px;
+  
     
 }
 
 button.feminino{
     margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
-    background-color: rgb(241, 4, 210);
+    background-color: rgb(190, 94, 178);
     color: white;
     border: none;
     padding: 10px 20px;
