@@ -7,23 +7,35 @@
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <div class="container">
         <h1 class="titulo1">Calculadora - <br>IMC</h1>
-        <hr size="4" width="45%" align="left" noshade >
+        <hr size="6" width="40%" align="left" noshade>
+
         <label for="peso">Peso em kg:</label>
-        <br>
-        <input type="number" name="peso" id="peso"  > 
+        <div class="input">
+            <br>
+            <i class="fa-solid fa-scale-balanced"></i>
+            <input class="metricas" type="number" name="peso" id="peso"> <span>kg</span>
+        </div>
+
         <br>
         <label for="altura">Altura em metros:</label>
-        <br>
-        <input type="text" name="altura" id="altura"> 
+        <div class="input"> 
+            <br>
+            <i class="fa-solid fa-ruler"></i>
+            <input class="metricas" type="text" name="altura" id="altura"> <span>m</span>
+        </div >
+
         <br>
         <input class="botao" type="button" value="Calcular">
-        
+
     </div>
 
 </body>
