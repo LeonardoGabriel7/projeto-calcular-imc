@@ -10,3 +10,10 @@ function alterarCor(idClicado) {
         masculino.style.backgroundColor = '';
     }
 }
+
+function pegarValorEmPeso(){
+    let input1 = document.getElementById("peso")
+    let PesoDaPessoa = input1.value
+    console.log(PesoDaPessoa)
+}
+
