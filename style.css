@@ -20,12 +20,14 @@ h1.titulo {
 }
 
 hr {
-    background-color: rgb(255, 15, 15);
+    background-color: rgb(0, 0, 0);
     margin-top: 5px;
     margin-bottom: 20px;
     border: none;
     
 }
+
+
 
 .hide {
     display: none !important;
@@ -78,7 +80,7 @@ hr {
 button {
     text-transform: uppercase;
     padding: 1rem 1.5rem;
-    background-color: #ff0000;
+    background-color: #080000;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -93,6 +95,34 @@ button:hover {
 #clear-btn {
     background-color: #444;
 }
+
+div.botao2{
+    display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    
+    button.masculino{
+      margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
+      background-color: rgb(84, 84, 163);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      
+        
+    }
+    
+    button.feminino{
+        margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
+        background-color: rgb(190, 94, 178);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
 
 /* Table */
 #result-container {
