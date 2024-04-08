@@ -1,109 +1,156 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: #272627;
-    display: flex;
-    justify-content: center; 
-    height: 100vh; 
-}
-
-div.container {
-    margin-top: 40px;
-    color: white;
-}
-
-h1.titulo1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
-    
-}
-
-p{
-    margin-bottom: 6px;
-    font-size: 19px;
-    font-weight: 500px;
-}
-
-div.botao2{
-display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-button.masculino{
-  margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
-  background-color: rgb(84, 84, 163);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
   
-    
-}
-
-button.feminino{
-    margin: 0 10px; /* Adiciona um espaço de 10px entre os botões */
-    background-color: rgb(190, 94, 178);
-    color: white;
+  body {
+    background-color: #090e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #1d1e33;
+    padding: 2rem;
+  }
+  
+  /* IMC Form */
+  #calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .form-control {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #ccc;
+  }
+  
+  .form-control input {
+    padding: 1rem 0.5rem;
+  }
+  
+  .action-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  button {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: #f44236;
     border: none;
-    padding: 10px 20px;
+    color: #fff;
     cursor: pointer;
-    margin-bottom: 10px;
-}
-
-
-hr {
-    background-color: blue;
-    margin-top: -15px;
-    margin-bottom: 20px;
-    border: none;
-}
-
-
-    .input {
-        color: white; 
-        font-size: 15px; 
-        margin-top: 3px; 
-        margin-bottom: 6px;
-        width: 300px;
-        height: 50px;
-        background-color: #413F47;
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; 
-    }
-
-
-input.botao {
-    background-color: blue;
-    color: white;
-    font-size: 15px;
-    display: block; 
-    margin: 0, auto; 
-    width: 300px;
-    height: 40px;
-    cursor: pointer;
-}
-
-
-
-input.metricas{
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    color: white;
-
-}
-
-span,i{
-    font-size: 1.3rem;
-    font-weight: 500px;
-    padding: 0.6rem;
-}
-
-label{
-    
-    font-size: 19px;
-}
+    opacity: 0.9;
+    flex: 1;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  #clear-btn {
+    background-color: #444;
+  }
+  
+  /* Table */
+  #result-container {
+    text-align: center;
+  }
+  
+  #imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  #imc-info {
+    font-size: 1.4rem;
+    color: #ccc;
+  }
+  
+  #result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+  }
+  
+  #result-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+  }
+  
+  .table-header {
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .table-header,
+  .table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+    text-align: center;
+  }
+  
+  .table-header h4,
+  .table-data p {
+    flex: 1;
+  }
+  
+  .table-header h4:nth-child(3),
+  .table-data p:nth-child(3) {
+    max-width: 80px;
+  }
+  
+  #back-btn {
+    align-self: center;
+  }
+  
+  .good {
+    color: #12db34;
+  }
+  
+  .low {
+    color: #dbce12;
+  }
+  
+  .medium {
+    color: #db6212;
+  }
+  
+  .high {
+    color: #db1912;
+  }
