@@ -181,3 +181,12 @@ const data = [
     cleanInputs();
     showOrHideResults();
   });
+
+  document.getElementById('height').addEventListener('input', function(event) {
+    var input = event.target;
+    var value = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+    if (value.length > 1) {
+        value = value.substring(0, 1) + ',' + value.substring(1); // Adiciona a vírgula após o primeiro caractere
+    }
+    input.value = value;
+});
